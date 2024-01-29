@@ -103,3 +103,7 @@ main {
   position: relative;
   top: -20px;
 }
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
