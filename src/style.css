@@ -67,7 +67,7 @@ main {
   color: rgba(47, 6, 78, 0.9);
 }
 .time {
-  color: rgba(115, 14, 107, 0.8);
+  color: rgba(115, 14, 107, 0.9);
 }
 .weather-app-details {
   font-size: 16px;
@@ -76,7 +76,7 @@ main {
 }
 
 .weather-app-details strong {
-  color: rgb(246, 82, 130);
+  color: rgba(115, 14, 107, 0.9);
 }
 .weather-app-temp-container {
   margin: 0;
