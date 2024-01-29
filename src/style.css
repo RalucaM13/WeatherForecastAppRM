@@ -109,4 +109,5 @@ main {
 }
 .weather-forecast-date {
   font-size: 16px;
+  color: rgba(47, 6, 78, 0.9);
 }
