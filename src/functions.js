@@ -55,8 +55,11 @@ searchCity("Paris");
 function displayForecast() {
   let forecast = document.querySelector("#forecast");
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
   days.forEach(function (day) {
-    forecast.innerHTML = `<div class="weather-forecast" id="forecast">
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast" id="forecast">
           <div class="row">
             <div class="col-2">
               <div class="weather-forecast-date">${day}</div>
@@ -69,5 +72,6 @@ function displayForecast() {
           </div>
         </div>`;
   });
+  forecastElement.innerHTML = forecastHtml;
 }
 displayForecast();
