@@ -105,6 +105,8 @@ main {
   top: -20px;
 }
 .weather-forecast {
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
   text-align: center;
 }
