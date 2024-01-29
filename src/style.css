@@ -120,8 +120,8 @@ main {
   color: rgba(47, 6, 78, 0.6);
 }
 .weather-forecast-icon {
-  width: 88px;
-  height: 88px;
+  width: 75px;
+  height: 75px;
   display: block;
   margin: 0 auto;
 }
