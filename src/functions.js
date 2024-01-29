@@ -56,17 +56,20 @@ function getForecast(city) {
   axios(apiUrl).then(displayForecast);
 }
 function displayForecast(response) {
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
-  days.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `<div class="weather-forecast" id="forecast">
-              <div class="weather-forecast-date">${day}</div>
+              <div class="weather-forecast-date">Tuesday</div>
               <img src="" alt="" width="40px" />
               <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max">18°</span>
-                <span class="weather-forecast-temperature-min">12°</span>
+                <span class="weather-forecast-temperature-max">${Math.round(
+                  day.temperature.maximum
+                )}°</span>
+                <span class="weather-forecast-temperature-min">${Math.round(
+                  day.temperature.minimum
+                )}°</span>
               </div>
             </div>
           </div>`;
