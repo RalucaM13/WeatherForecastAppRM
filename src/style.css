@@ -109,9 +109,12 @@ main {
 }
 .weather-forecast-date {
   font-size: 16px;
-  color: rgba(47, 6, 78);
+  color: rgba(4, 50, 103, 0.8);
 }
 .weather-forecast-temperatures {
   font-size: 13px;
   color: rgba(47, 6, 78);
+}
+.weather-forecast-temperature-min {
+  color: rgba(47, 6, 78, 0.5);
 }
