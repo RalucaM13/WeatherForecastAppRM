@@ -53,7 +53,6 @@ searchFormElement.addEventListener("submit", SearchBoxSubmit);
 
 searchCity("Paris");
 function displayForecast() {
-  let forecast = document.querySelector("#forecast");
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
   days.forEach(function (day) {
@@ -72,6 +71,7 @@ function displayForecast() {
           </div>
         </div>`;
   });
+  let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 displayForecast();
