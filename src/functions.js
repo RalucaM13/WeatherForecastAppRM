@@ -48,10 +48,11 @@ function SearchBoxSubmit(event) {
 
   searchCity(searchBoxInput.value);
 }
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", SearchBoxSubmit);
 
-searchCity("Paris");
+function getForecast(city) {
+  let apiKey = "b13fe4d2a8e30dd1a60bbd2oaf1tb1be";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+}
 function displayForecast() {
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
@@ -71,4 +72,9 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", SearchBoxSubmit);
+
+searchCity("Paris");
+getForecast("Paris");
 displayForecast();
